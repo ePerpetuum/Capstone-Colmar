@@ -1,0 +1,92 @@
+html {
+ font-family: "Palatino";
+ font-size: 20px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo span:last-child {
+  color: gray;
+}
+
+.bar ul {
+  display: inline-flex;
+}
+
+.bar a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .computer {display: none;}
+  .mobile {display: flex; justify-content: flex-start; align-items: center;}
+  .mobile li {}
+}
+
+.banner {
+  display: flex;
+  background-color: lightgray;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.banner .sidebar {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  justify-content: center;
+  color: gray;
+  margin-left: 24px;
+}
+
+.banner .button {
+  color: white;
+  background-color: gray;
+  text-align: center;
+  padding: .4rem;
+}
+
+.banner h4 {
+  margin-top: 2rem;
+}
