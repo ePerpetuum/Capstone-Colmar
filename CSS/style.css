@@ -1,25 +1,80 @@
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../capstone_colmar_assets/Fonts/Brandon Grotesque/BrandonGrotesque-Regular.otf");
+    font-weight: normal;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../capstone_colmar_assets/Fonts/Brandon Grotesque/BrandonGrotesque-bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova Cond Reg.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova ExCn bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova Black.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../capstone_colmar_assets/Fonts/Proxima Nova/Proxima Nova Black.otf");
+  font-weight: 900;
+}
+
+
 html {
- font-family: "Palatino";
- font-size: 20px;
+ font-family: "Proxima Nova";
+ font-size: 16px;
+ color:  #637383;
+ background-color: #FFFFE6;
+}
+
+body {
+  line-height: 1.8;
 }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-h1 {
+h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-family: "Brandon Grotesque";
+  font-size: 1.8rem;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+h5 {
   font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-top: .7rem;
+}
+
+li {
+  font-family: "Brandon Grotesque";
 }
 
 .bar {
@@ -33,11 +88,21 @@ h4 {
 .logo {
   display: inline-flex;
   align-items: center;
+  font-family: "Copperplate";
   text-transform: uppercase;
 }
 
 .logo span:last-child {
-  color: gray;
+  color: #a8b3bd;
+}
+
+a {
+  text-decoration: none;
+  color: #637383;
+}
+
+a:hover {
+  color: #458F40;
 }
 
 .bar ul {
@@ -46,8 +111,6 @@ h4 {
 
 .bar a {
   margin-left: 16px;
-  text-decoration: none;
-  color: black;
 }
 
 .mobile {
@@ -60,33 +123,89 @@ h4 {
   .mobile li {}
 }
 
-.banner {
+.banner, .overview, .thesis {
   display: flex;
-  background-color: lightgray;
 }
 
-.banner img {
+.banner {
+  background-color: #c5ccd3;
+}
+
+.big-card {
   width: 60%;
-  height: auto;
   margin: 32px 24px;
 }
 
-.banner .sidebar {
-  display: flex;
-  width: 25%;
-  flex-direction: column;
-  justify-content: center;
-  color: gray;
-  margin-left: 24px;
+img {
+  width: 100%;
+  height: auto;
 }
 
-.banner .button {
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 40%;
+}
+
+.button {
   color: white;
-  background-color: gray;
+  background-color: #637383;
   text-align: center;
   padding: .4rem;
 }
 
 .banner h4 {
   margin-top: 2rem;
+}
+
+.small-card {
+  Display: flex;
+}
+
+.small-card-image {
+  width: 35%;
+  margin: 16px;
+}
+
+.sidebar .small-card:last-child {
+  background-color: #c5ccd3;
+ }
+
+.small-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.majors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c5ccd3;
+  padding: 32px 72px;
+}
+
+.row {
+  display: flex;
+  margin-top: 32px;
+}
+
+.course {
+  width: 33%;
+  background-color: ivory;
+}
+
+.course-text {
+  margin-left: 16px;
+}
+
+.big-head {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.col2 {
+  margin: 0 32px;
 }
